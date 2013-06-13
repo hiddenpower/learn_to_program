@@ -1,0 +1,13 @@
+• Building and sorting an array. Write the program we talked about at the
+beginning of this chapter, one that asks us to type as many words as we
+want (one word per line, continuing until we just press Enter on an
+empty line) and then repeats the words back to us in alphabetical order.
+Make sure to test your program thoroughly; for example, does hitting
+Enter on an empty line always exit your program? Even on the first line?
+And the second? Hint: There’s a lovely array method that will give you a
+sorted version of an array: sort. Use it!
+• Table of contents, revisited. Rewrite your table of contents program on
+page 32. Start the program with an array holding all of the information
+for your table of contents (chapter names, page numbers, and so on).
+Then print out the information from the array in a beautifully formatted
+table of contents.
