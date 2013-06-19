@@ -1,5 +1,5 @@
 puts ""
-puts "Dictionary Sort an Array"
+puts "Shuffle an Array"
 word = "X"
 words = []
 while word != ""
@@ -8,20 +8,24 @@ while word != ""
   words << word
 end
 
-def dictionary_sort(array)
-  done = true
-
-  while done
-    done = false
-    0.upto(array.size-2) do |i|
-      if array[i].downcase > array[i+1].downcase
-        array[i], array[i+1] = array[i+1], array[i]
-        done = true
-      end
+def shuffle(array)
+  random = []
+  pos = 0
+  i = 0
+  
+  array.pop
+  while i<array.size
+    pos = rand(array.size)
+    
+    if array[pos] != 'used'
+      random << array[pos]
+      array[pos] = 'used'
+      i+=1
     end
+
   end
 
-  puts array
+  puts random
 end
 
-dictionary_sort words
+shuffle words
