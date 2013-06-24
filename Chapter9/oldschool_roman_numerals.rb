@@ -1,6 +1,9 @@
 puts ""
 puts "Old-school Roman numerals"
 puts ""
+puts "Type the number you want to convert to roman numerals"
+roman_num = gets.chomp.to_i.floor
+
 def roman(number)
   i_repeat = 0
   v_repeat = 0
@@ -47,4 +50,4 @@ def roman(number)
 
   puts "M"*m_repeat + "D"*d_repeat + "C"*c_repeat + "L"*l_repeat + "X"*x_repeat + "V"*v_repeat + "I"*i_repeat
 end
-roman(2987)
+roman roman_num

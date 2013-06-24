@@ -1,0 +1,19 @@
+• Expanded english_number. First, put in thousands; it should return 'one
+thousand' instead of (the sad) 'ten hundred' and 'ten thousand' instead of 'one
+hundred hundred'.
+Now expand upon english_number some more. For example, put in millions
+so you get 'one million' instead of 'one thousand thousand'. Then try adding billions,
+trillions, and so on.
+• Wedding number. How about wedding_number? It should work almost the
+same as english_number, except it should insert the word and all over the
+place, returning things like 'nineteen hundred and seventy and two', or however
+wedding invitations are supposed to look. I’d give you more examples, but
+I don’t fully understand it myself. You might need to contact a wedding
+coordinator to help you. (I’m really just kidding. You don’t have to do this
+one. I didn’t even do this one.)
+• “Ninety-nine Bottles of Beer on the Wall.” Using english_number and your old
+program on page 49, write out the lyrics to this song the right way this
+time. Punish your computer: have it start at 9999. (Don’t pick a number
+too large, though, because writing all of that to the screen takes your
+computer quite a while. A hundred thousand bottles of beer takes some
+time; and if you pick a million, you’ll be punishing yourself as well!)

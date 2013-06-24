@@ -1,0 +1,51 @@
+• Safer picture downloading. Adapt the picture-downloading/file-renaming
+program to your computer by adding some safety features to make sure
+you never overwrite a file. A few methods you might find useful are
+File.exist? (pass it a filename, and it will return true or false) and exit (like if
+return and Napoleon had a baby—it kills your program right where it stands;
+this is good for spitting out an error message and then quitting).
+• Build your own playlist. For this to work, you need to have some music
+ripped to your computer in some format. We’ve ripped a 100 or so CDs,
+and we keep them in directories something like music/genre/artist_and_cd_name/
+track_number.ogg. (I’m partial to the .ogg format, though this would work just
+as well with .mp3s or whatever you use.)
+Building a playlist is easy. It’s just a regular text file (no YAML required,
+even). Each line is a filename, like this:
+music/world/Stereolab--Margarine_Eclipse/track05.ogg
+What makes it a playlist? Well, you have to give the file the .m3u extension,
+like playlist.m3u or something. And that’s all a playlist is: a text file with an
+.m3u extension.
+So, have your program search for various music files and build you a
+playlist. Use your shuffle method on page 75 to mix up your playlist. Then
+check it out in your favorite music player (Winamp, MPlayer, and so on)!
+• Build a better playlist. After listening to playlists for a while, you might
+start to find that a purely random shuffle just doesn’t quite seem…mixed
+up enough. (Random and mixed up are not at all the same thing. Random
+is totally clumpy.) For example, here’s an excerpt from a playlist I made
+a while back of Thelonius Monk and Faith No More:
+music/Jazz/Monk--Nutty/track08.ogg
+music/Jazz/Monk--London_Collection_1/track05.ogg
+music/Jazz/Monk--Nutty/track13.ogg
+music/Jazz/Monk--Round_Midnight/track02.ogg
+music/Jazz/Monk--Round_Midnight/track14.ogg
+music/Jazz/Monk--Round_Midnight/track15.ogg
+music/Jazz/Monk--Round_Midnight/track08.ogg
+music/Rock/FNM--Who_Cares_A_Lot_2/track02.ogg
+music/Rock/FNM--Who_Cares_A_Lot_2/track08.ogg
+music/Rock/FNM--Who_Cares_A_Lot_1/track02.ogg
+music/Rock/FNM--Who_Cares_A_Lot_2/track01.ogg
+Hey! I asked for random! Well, that’s exactly what I got…but I wanted
+mixed up. So, here’s the grand challenge: instead of using your old shuffle,
+write a new music_shuffle method. It should take an array of filenames (like
+those listed previously) and mix them up good and proper.
+You’ll probably need to use the split method for strings. It returns an array
+of chopped-up pieces of the original string, split where you specify, like
+this:
+awooga = 'this/is/not/a/daffodil'.split '/'
+puts awooga
+this
+is
+not
+a
+daffodil
+Mix it up as best you can!
